@@ -1,4 +1,4 @@
-# gifload - love2d GIF&#8480; image loader.
+# gifload - love2d GIF&#8480; image loader. Is happly use for loading .gif! (here is what it does and how to use it!)
 
 This is a LÖVE (love2d) module that implements reading of GIF images, implemented in pure LuaJIT + FFI.
 
