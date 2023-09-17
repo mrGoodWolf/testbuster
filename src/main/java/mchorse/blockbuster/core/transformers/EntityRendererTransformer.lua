@@ -1,4 +1,3 @@
-package mchorse.blockbuster.core.transformers;
 
 import mchorse.mclib.utils.coremod.ClassMethodTransformer;
 import mchorse.mclib.utils.coremod.CoreClassTransformer;
@@ -9,10 +8,6 @@ import org.objectweb.asm.tree.MethodInsnNode;
 import org.objectweb.asm.tree.MethodNode;
 import org.objectweb.asm.tree.VarInsnNode;
 
-import java.util.Iterator;
-
-public class EntityRendererTransformer extends ClassMethodTransformer
-{
 	public EntityRendererTransformer()
 	{
 		super();
@@ -23,7 +18,7 @@ public class EntityRendererTransformer extends ClassMethodTransformer
 		this.notchSign = "(IFJ)V";
 	}
 
-	@Override
+	
 	public void processMethod(String s, MethodNode methodNode)
 	{
 		AbstractInsnNode renderLitNode = null;
@@ -74,9 +69,5 @@ public class EntityRendererTransformer extends ClassMethodTransformer
 
 			System.out.println("BBCoreMod: successfully patched renderWorldPass!");
 		}
-		else
-		{
-			System.out.println("BBCoreMod: failed to find particle nodes: " + renderLitNode + " and " +renderNode);
-		}
+		
 	}
-}
